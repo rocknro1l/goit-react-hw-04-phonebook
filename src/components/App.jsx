@@ -46,7 +46,7 @@ export const App = () => {
     setFilter(e.target.value);
   };
 
-  const filterContacts = contacts => {
+  const filterContacts = () => {
     return contacts.filter(el =>
       el.name.toLocaleLowerCase().includes(filter.toLocaleLowerCase())
     );
